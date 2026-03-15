@@ -1,0 +1,50 @@
+{
+  "name": "stockbot-server",
+  "version": "1.0.0",
+  "description": "Stockbot REST API and Collector",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/commands/serve.ts",
+    "dev:collect-stock-data": "ts-node-dev --respawn src/commands/collect-stock-data.ts",
+    "build": "tsc",
+    "start": "node dist/commands/serve.js",
+    "start:collect-stock-data": "node dist/commands/collect-stock-data.js",
+    "test": "jest --testPathPattern=tests/unit",
+    "test:unit": "jest --testPathPattern=tests/unit",
+    "test:integration": "jest --testPathPattern=tests/integration",
+    "test:all": "jest",
+    "lint": "eslint src/**/*.ts && knip",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "pg": "^8.11.3",
+    "pino": "^8.17.2",
+    "reflect-metadata": "^0.2.2",
+    "swagger-ui-express": "^5.0.0",
+    "tsyringe": "^4.10.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/csv-parse": "^1.2.5",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^29.5.11",
+    "@types/node": "^20.10.6",
+    "@types/pg": "^8.10.9",
+    "@types/supertest": "^6.0.2",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
+    "eslint": "^10.0.3",
+    "jest": "^29.7.0",
+    "knip": "^5.86.0",
+    "pino-pretty": "^13.1.3",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^8.57.0"
+  }
+}

@@ -1,0 +1,40 @@
+# Dependencies
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# Docker
+Dockerfile*
+.dockerignore
+docker-compose*.yml
+
+# Environment
+.env
+.env.*
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Testing
+coverage/
+
+# Build artifacts (we rebuild in container)
+dist/
+build/
+
+# Nix
+result
+result-*
+
+# Specs and docs (not needed in container)
+specs/
+.specify/
+*.md
+
