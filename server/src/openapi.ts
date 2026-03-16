@@ -1,7 +1,7 @@
 export const openApiSpec = {
   openapi: '3.0.0',
   info: {
-    title: 'Stockbot API',
+    title: 'StockApp API',
     version: '1.0.0',
     description: 'API for calculating optimal stock buy/sell points',
   },

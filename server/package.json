@@ -1,5 +1,5 @@
 {
-  "name": "stockbot-server",
+  "name": "stockapp-server",
   "version": "1.0.0",
   "description": "Stockbot REST API and Collector",
   "main": "dist/index.js",
